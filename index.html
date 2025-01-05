@@ -153,7 +153,7 @@
               id="post-14268" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 
 
-              <div class="entry-content clear" ast-blocks-layout="true" itemprop="text">
+              <div class="entry-content clear" ast-blocks-layout="true" style="background-color: #e7c9da;" itemprop="text">
 
 
 
@@ -1046,7 +1046,7 @@
                   }
 
                   section.regalos .anim-regalos {
-                    width: 60px;
+                    width: 100px;
                     margin: 1px auto 40px;
                   }
 
@@ -1115,17 +1115,19 @@
                     margin: 0 auto 15px;
                   }
 
-                  section.instagram:after {
+                  /* section.instagram:after {
                     background-image: url('https://excluevent.com/wp-content/uploads/2024/09/img_ondas07-1.svg');
                     position: absolute;
                     content: '';
-                    /* background-size: contain !important; */
+                    background-size: contain !important;
                     background-repeat: no-repeat;
                     background-position: bottom center;
                     height: 100%;
                     width: 100%;
                     bottom: 0;
-                  }
+                    z-index: 1000;
+                    transform: rotateY(180deg);
+                  } */
 
 
 
@@ -1136,16 +1138,35 @@
                   /* Footer */
 
                   section.footer {
-                    /* min-height: 275px; */
                     position: relative;
-                    background: url('../img/img_trama.svg') center top repeat-y;
+                    background: url('./public/webp/footer.webp');
+                    background-size: cover !important;
+                    background-position: 50% -100%;
+                    background-repeat: no-repeat;
                     background-color: var(--color-2);
-                    background-size: contain !important;
-                    padding-bottom: 15%;
-                    margin-top: -2px;
+                    /* padding-bottom: 15%;
+                    margin-top: -2px; */
+                    clip-path: path('M0,50 C200,-30 400,130 600,50 S1000,-30 1200,50 V300 H0 Z');
+                    min-height: 350px;
+                    filter: opacity(0.92);
                   }
 
-                  section.footer .col-nombres-footer img {
+                  /* section.footer{
+                    position: relative;
+                    background: url('./public/webp/footer.webp');
+                    background-size: cover !important;
+                    background-position: 50% -120%;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    min-height: 350px;
+                  } */
+
+                  /* .wave-container{
+                    transform: rotate(180deg);
+                    transform: rotateY('180deg');
+                  } */
+
+                  /* section.footer .col-nombres-footer img {
                     width: 100px;
                     position: absolute;
                     margin-left: auto;
@@ -1154,27 +1175,27 @@
                     right: 0;
                     text-align: center;
                     top: -60px;
-                  }
+                  } */
 
 
-                  section.footer h4 {
+                  /* section.footer h4 {
                     width: 100%;
                     text-align: center;
                     font-family: 'DM Serif Display', serif;
                     font-size: 70px;
                     color: var(--color-1);
-                  }
+                  } */
 
-                  section.footer h5 {
+                  /* section.footer h5 {
                     width: 100%;
                     text-align: center;
                     font-family: 'DM Serif Display', serif;
                     font-size: 40px;
                     color: #555;
-                  }
+                  } */
 
 
-                  section.footer h4 span {
+                  /* section.footer h4 span {
                     background-color: var(--color-1);
                     color: #fff;
                     display: inline-block;
@@ -1183,22 +1204,22 @@
                     height: 50px;
                     line-height: 48px;
                     font-size: 40px;
-                  }
+                  } */
 
-                  section.footer .col-acciones-footer ul {
+                  /* section.footer .col-acciones-footer ul {
                     text-transform: uppercase;
                     font-family: 'Quicksand', sans-serif;
                     font-weight: 700;
                     text-align: left;
-                  }
+                  } */
 
 
-                  section.footer .col-acciones-footer ul li {
+                  /* section.footer .col-acciones-footer ul li {
                     margin-bottom: 20px;
-                  }
+                  } */
 
 
-                  section.footer .col-acciones-footer ul a {
+                  /* section.footer .col-acciones-footer ul a {
                     color: var(--color-1);
 
                     -webkit-transition: all 0.5s 0s ease;
@@ -1226,7 +1247,7 @@
 
                   section.footer .addeventatc span.nameBtn:hover {
                     color: var(--color-3) !important;
-                  }
+                  } */
 
 
                   /* ---------- */
@@ -2274,7 +2295,7 @@
 
                     section.instagram {
                       padding-top: 35%;
-                      padding-bottom: 50%;
+                      /* padding-bottom: 50%; */
                     }
 
                     section.footer {
@@ -3060,7 +3081,7 @@
                         <div class="box-aros d-flex justify-content-center align-items-center" bis_skin_checked="1">
                           <div class="box-circulo text-center" bis_skin_checked="1">
 
-                            <span class="falta">Falta</span>
+                            <span class="falta">Faltan</span>
 
                             <div id="reloj" class="reloj" bis_skin_checked="1">
 
@@ -3497,10 +3518,10 @@
                         <!--h2 class="title">Regalos</h2>-->
                         <h3
                           style=" text-align: center; font-family: 'DM Serif Display', serif; font-size: 45px; color: #333333;">
-                          Regalos</h3>
-                        <p class="subtitle">Si deseas regalarme algo más que tu hermosa presencia&#8230;</p>
+                          Regalo</h3>
+                        <p class="subtitle" style="font-size: 35px; font-weight: 900;">Lluvia de sobres.</p>
 
-                        <div class="w-100" bis_skin_checked="1">
+                        <div class="w-150" bis_skin_checked="1">
 
                           <div class="anim-regalos" bis_skin_checked="1">
                             <div id="anim-regalos1"></div>
@@ -3510,7 +3531,7 @@
 
                         <br>
 
-                        <a href="#" class="boton modal-regalos" style="text-decoration: none;">Ver más</a>
+                        <!-- <a href="#" class="boton modal-regalos" style="text-decoration: none;">Ver más</a> -->
 
                       </div>
                     </div>
@@ -3523,7 +3544,7 @@
                       <div class="row text-center d-flex justify-content-center align-items-center"
                         bis_skin_checked="1">
 
-                        <h2 class="title">Una gran fiesta junto a vos</h2>
+                        <h2 class="title">Comparte tus fotos y videos de este hermoso día</h2>
                         <p class="subtitle">Comparte tus fotos y videos de este hermoso día</p>
 
                         <div class="w-100" bis_skin_checked="1">
@@ -3545,10 +3566,17 @@
                       </div>
                   </section>
                   <!-- Footer-->
-                  <section class="footer">
-                    <div class="container" bis_skin_checked="1">
+                  <!-- <section class="footer"> -->
+                    <!-- <div class="wave-container">
+                      <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#ffffff" fill-opacity="0.7" d="M0,224L48,213.3C96,203,192,181,288,176C384,171,480,181,576,192C672,203,768,213,864,192C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                      </svg>
+                    </div> -->
+                    
+                    <!-- <div class="container" bis_skin_checked="1"> -->
+                      <!-- <img src="./public/webp/footer.webp" alt=""> -->
 
-                      <div class="row" bis_skin_checked="1">
+                      <!-- <div class="row" bis_skin_checked="1">
 
 
 
@@ -3573,8 +3601,12 @@
                       </div>
                       <h3
                         style="text-align: center; font-size: 30px; font-family: 'DM Serif', Display; color: #bfa880;">
-                        Te espero!</h3>
-                    </div>
+                        Te espero!</h3> -->
+                    <!-- </div> -->
+                  <!-- </section> -->
+
+                  <section class="footer">
+                   <!-- <img src="./public/svg/ondas.svg" alt=""> -->
                   </section>
 
 
@@ -3590,7 +3622,7 @@
                       </div>
                       <audio id="miAudio" controls style="display: none;">
                         <source
-                          src="https://excluevent.com/wp-content/uploads/2024/10/Sara-Bareilles-Brave-Lyrics_4Ny_LX3byp8.mp3"
+                          src="./public/cancion_de_fondo.mp3"
                           type="audio/mpeg">
                         Tu navegador no soporta el elemento de audio.
                       </audio>
@@ -3923,12 +3955,12 @@
 
                         <div class="modal-body" bis_skin_checked="1">
 
-                          <p> • Te invitamos a celebrar los 15 de nuestra hija.
+                          <p> <b>• Puntualidad:</b> El evento comenzará a las 6:00 PM en punto. Agradeceremos mucho tu puntualidad para que todo fluya de acuerdo con el horario planeado.
                             <br> <br>
-                            • Confirmar Asistencia a la brevedad.
+                            <b>• Confirmación de Asistencia:</b> Te pedimos que confirmes tu asistencia lo antes posible, <b>preferiblemente antes del 1 de febrero</b>, para poder organizar el evento de la mejor manera.
                             <br><br>
 
-                            • Olvidarse de todo ¡Y a disfrutar junto con nosotros!
+                            <b>• Transporte:</b> Si es posible, te sugerimos evitar traer tu carro al evento. Así podrás disfrutar de la fiesta sin preocuparte por el parqueo. ¡Queremos que te relajes y disfrutes al máximo!
                           </p>
 
                         </div>
@@ -4473,7 +4505,7 @@
                         height: '10',
                         width: '10',
                         playerVars: {
-                          playlist: 'KaM1bCuG4xo',
+                          playlist: 'qQkJe0zzf9w',
                           loop: 1
                         },
                         events: {
